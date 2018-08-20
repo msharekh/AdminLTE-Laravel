@@ -51,3 +51,6 @@ and then you can also run
 
 npm run dev
  
+
+// Run all Mix tasks...
+npm run dev
