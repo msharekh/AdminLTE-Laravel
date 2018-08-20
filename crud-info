@@ -1,0 +1,37 @@
+https://www.youtube.com/watch?v=rVLWXA1tnVY&list=PLB4AdipoHpxYmPdyI3e-yH58-3CS4qoAf&index=2
+
+composer create-project --prefer-dist laravel/laravel crud "5.5.*"
+
+php artisan serve
+
+php artisan make:model YourModel
+php artisan make:controller YourController
+php artisan make:migration create_your_table_name
+php artisan make:factory YourModel -m "app\yourmodelname"
+php artisan make:controller YourController -r
+
+php artisan make:model Course -a
+
+php artisan make:auth
+
+php artisan route:list
+sudo /Applications/XAMPP/xamppfiles/bin/mysql.server start
+mysql -uroot
+/Applications/XAMPP/bin/mysql -uroot
+
+to create/update/feed database:
+create database zamil_training_db;
+
+php artisan migrate
+describe Courses;
+php artisan db:seed
+
+to update packages:
+composer update new/package
+
+php artisan key:generate
+Application key [base64:sWHTdNAw96TPCTQikF0u+NPxTgpGLoysfJNadOmHG1o=] set successfully.
+
+<form action="" method="POST">
+@csrf
+ 
