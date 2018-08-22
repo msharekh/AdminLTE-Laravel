@@ -17,7 +17,7 @@
     <tr>
       <td scope="row">{{$category->title}}</td>
       <td>{{$category->description}}</td>
-      <td><button type="button" class="btn btn-primary" data-categorytitle="{{$category->title}}" data-toggle="modal" data-target="#editCategoryModal">
+      <td><button type="button" class="btn btn-primary" data-category="{{$category}}" data-toggle="modal" data-target="#editCategoryModal">
             Edit
           </button>
 
