@@ -33,6 +33,7 @@
                 {{method_field('patch')}}
                 {{csrf_field()}}
                   <div class="modal-body">
+                    <input type="hidden" name="categoryId" id="categoryId" value="">
                         @include('category.form')            
                   </div>
                   <div class="modal-footer">

@@ -1,5 +1,4 @@
 $('#editCategoryModal').on('show.bs.modal', function (event) {
-
     console.log('editCategory show modal');
     var button = $(event.relatedTarget) // Button that triggered the modal
     var category = button.data('category') // Extract info from data-* attributes
@@ -8,5 +7,6 @@ $('#editCategoryModal').on('show.bs.modal', function (event) {
     var modal = $(this)
     // modal.find('.modal-title').text('New message to ' + recipient)
     modal.find('.modal-body #categoryTitle').val(category.title);
-    modal.find('.modal-body #categoryDescription').text(category.description);
+    modal.find('.modal-body #categoryDescription').val(category.description);
+    modal.find('.modal-body #categoryId').val(category.id);
   })

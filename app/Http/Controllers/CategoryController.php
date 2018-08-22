@@ -74,7 +74,11 @@ class CategoryController extends Controller
     public function update(Request $request)
     {
         //
-        dd($request->all());
+        $category = Category::findOrFail($request->categoryId);
+        $category->update($request->all());
+        // Category::update($request->all());
+
+        return back();
     }
 
     /**
