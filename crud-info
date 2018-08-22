@@ -24,7 +24,10 @@ create database zamil_training_db;
 
 php artisan migrate
 describe Courses;
+
 php artisan db:seed
+
+ php artisan make:factory CategoryFactory --model=Category
 
 to update packages:
 composer update new/package
