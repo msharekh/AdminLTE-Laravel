@@ -67,3 +67,7 @@ npm run dev
 
 php artisan make:test CategoryTest --unit
 
+php artisan dusk
+
+
+return $request->all();
