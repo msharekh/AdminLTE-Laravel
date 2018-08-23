@@ -1,5 +1,9 @@
 https://www.youtube.com/watch?v=rVLWXA1tnVY&list=PLB4AdipoHpxYmPdyI3e-yH58-3CS4qoAf&index=2
 
+====git========
+
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 composer create-project --prefer-dist laravel/laravel crud "5.5.*"
 
 php artisan serve
