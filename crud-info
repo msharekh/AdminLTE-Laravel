@@ -20,7 +20,7 @@ mysql -uroot
 /Applications/XAMPP/bin/mysql -uroot
 
 to create/update/feed database:
-create database zamil_training_db;
+create database crud;
 
 php artisan migrate
 describe Courses;
@@ -61,3 +61,9 @@ npm run dev
 
 ====auth========
 <p>{{Auth::user()->name}}</p>
+
+
+======testing=======
+
+php artisan make:test CategoryTest --unit
+
