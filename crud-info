@@ -25,12 +25,19 @@ create database crud;
 php artisan migrate
 describe Courses;
 
+====seed========
+
 php artisan db:seed
 
  php artisan make:factory CategoryFactory --model=Category
+ php artisan make:factory PostFactory --model=Post
+
+====packages========
 
 to update packages:
 composer update new/package
+
+====key========
 
 php artisan key:generate
 Application key [base64:sWHTdNAw96TPCTQikF0u+NPxTgpGLoysfJNadOmHG1o=] set successfully.
@@ -71,3 +78,28 @@ php artisan dusk
 
 
 return $request->all();
+
+
+====setup pages========
+
+1-create model
+
+2-create controller
+php artisan make:controller PostController -r
+
+3-create modelFolder
+in ../resources/views
+create Post
+and file index.blade.php
+
+http://127.0.0.1:8000/Post
+in web.php
+write Route::resource('post', 'PostController');
+
+in controller
+write :
+use \App\Post;
+  $posts = Post::all();
+        return view('post.index',compact('posts'));
+    
+
