@@ -5,7 +5,7 @@ $('#editPostModal').on('show.bs.modal', function (event) {
      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var modal = $(this)
-    // modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-title').text('Upate ' + post.name)
     modal.find('.modal-body #postName').val(post.name);
      modal.find('.modal-body #postId').val(post.id);
   })
@@ -17,7 +17,7 @@ $('#editPostModal').on('show.bs.modal', function (event) {
      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var modal = $(this)
-    // modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-title').text('Delete ' + post.name)
  
     modal.find('.modal-body #postId').val(post.id);
   })

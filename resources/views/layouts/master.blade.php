@@ -97,6 +97,7 @@ desired effect
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="{{url('category')}}"><i class="fa fa-link"></i> <span>Category</span></a></li>
+        <li               ><a href="{{url('post')}}"><i class="fa fa-link"></i> <span>Post</span></a></li>
          
       </ul>
       <!-- /.sidebar-menu -->
