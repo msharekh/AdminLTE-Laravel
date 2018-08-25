@@ -83,8 +83,8 @@ php artisan dusk
 
 return $request->all();
 
-./vendor/bin/phpunit
-
+./vendor/bin/phpunit          ......ok
+ 
 
 **********
 $ phpunit
