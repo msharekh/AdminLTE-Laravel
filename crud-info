@@ -83,6 +83,19 @@ php artisan dusk
 
 return $request->all();
 
+**********
+$ phpunit
+PHPUnit 3.7.21 by Sebastian Bergmann.
+
+Configuration read from D:\Development\Laravel\AdminLTE\phpunit.xml
+
+
+
+Time: 1.86 seconds, Memory: 4.00MB
+
+No tests executed!
+**************
+
 
 ====setup pages========
 
