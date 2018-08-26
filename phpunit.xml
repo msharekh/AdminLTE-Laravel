@@ -11,15 +11,15 @@
     <testsuites>
         <!-- <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>
-        </testsuite>
+        </testsuite> -->
 
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests/Unit</directory>
-        </testsuite> -->
-
-         <testsuite name="Application Test Suite">
-            <directory>./tests/Custom</directory>
         </testsuite>
+
+         <!-- <testsuite name="Application Test Suite">
+            <directory>./tests/Custom</directory>
+        </testsuite> -->
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
