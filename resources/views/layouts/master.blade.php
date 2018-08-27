@@ -23,20 +23,20 @@ BODY TAG OPTIONS:
 =================
 Apply one or more of the following classes to get the
 desired effect
-|---------------------------------------------------------|
++---------------------------------------------------------+
 | SKINS         | skin-blue                               |
 |               | skin-black                              |
 |               | skin-purple                             |
 |               | skin-yellow                             |
 |               | skin-red                                |
 |               | skin-green                              |
-|---------------------------------------------------------|
++---------------------------------------------------------+
 |LAYOUT OPTIONS | fixed                                   |
 |               | layout-boxed                            |
 |               | layout-top-nav                          |
 |               | sidebar-collapse                        |
 |               | sidebar-mini                            |
-|---------------------------------------------------------|
++---------------------------------------------------------+
 -->
 <body class="hold-transition skin-blue sidebar-mini" id="app">
 <div class="wrapper">
@@ -60,6 +60,13 @@ desired effect
       </a>
       <!-- Navbar Right Menu -->
       
+      <div class="span4">
+        <div class="alert alert-danger show" role="alert">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>Alert!</strong> Here is my message..
+        </div>
+      </div>
+
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
@@ -89,7 +96,8 @@ desired effect
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
-
+      <div class="span10"><button class="btn">Click me</button></div>
+      
       <ul>
           <li>
               <a href="{{ url('/logout') }}"
@@ -171,6 +179,12 @@ desired effect
 <script src="{{ asset('js/category/modalEvent.js') }}"></script>
 <script src="{{ asset('js/post/modalEvent.js') }}"></script>
 
+<script>
+$(".btn").on("click", function() {
+    $(".alert").removeClass("in").show();
+	$(".alert").delay(200).addClass("in").fadeOut(2000);
+});
+</script>
 
 </body>
 </html>
