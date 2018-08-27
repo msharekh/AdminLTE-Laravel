@@ -123,3 +123,6 @@ use \App\Post;
         return view('post.index',compact('posts'));
     
 
+Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout'])
+
+ 

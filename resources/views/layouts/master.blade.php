@@ -90,6 +90,19 @@ desired effect
         </div>
       </div>
 
+      <ul>
+          <li>
+              <a href="{{ url('/logout') }}"
+                  onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                  Logout
+              </a>
+
+              <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                  {{ csrf_field() }}
+              </form>
+          </li>
+      </ul>
       <!-- search form (Optional) -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">

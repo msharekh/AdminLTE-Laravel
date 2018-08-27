@@ -24,10 +24,17 @@ class CustomTest extends TestCase
         # code...
         if(DB::connection()->getDatabaseName()){
             $isConnected=true;
-            echo "\nconnected sucessfully to database ";
-            
+            echo "\nconnected sucessfully to database ";            
         }
 
         $this->assertTrue($isConnected);
     }
+
+    public function testSeePostsTitle()
+    {
+        $word="Documentation";
+        echo "\ncheck if there is this ".$word;
+        $this->get('/')->assertSee($word);
+
+     }
 }

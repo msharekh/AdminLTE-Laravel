@@ -28,3 +28,6 @@ Route::resource('post', 'PostController',
 // Route::get('/category', 'CategoryController@index')->name('category');
 
 Route::get('accessor/index', 'AccessorController@index');
+
+// Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
